@@ -1,0 +1,562 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>M2Mゲートウェイの準備 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../3-arduino-fundamentals/" />
+    
+    
+    <link rel="prev" href="../1-install-arduino/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1-install-arduino/">
+            
+                <a href="../1-install-arduino/">
+            
+                    
+                    Arduinoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    M2Mゲートウェイの準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3-arduino-fundamentals/">
+            
+                <a href="../3-arduino-fundamentals/">
+            
+                    
+                    Arduinoの基礎
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3-arduino-fundamentals/blink/">
+            
+                <a href="../3-arduino-fundamentals/blink/">
+            
+                    
+                    Lチカ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3-arduino-fundamentals/digital/">
+            
+                <a href="../3-arduino-fundamentals/digital/">
+            
+                    
+                    デジタル入出力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3-arduino-fundamentals/analog/">
+            
+                <a href="../3-arduino-fundamentals/analog/">
+            
+                    
+                    アナログ入出力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3-arduino-fundamentals/using-libraries/">
+            
+                <a href="../3-arduino-fundamentals/using-libraries/">
+            
+                    
+                    ライブラリの使い方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3-arduino-fundamentals/serial/">
+            
+                <a href="../3-arduino-fundamentals/serial/">
+            
+                    
+                    シリアル通信(Serial)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../3-arduino-fundamentals/wire/">
+            
+                <a href="../3-arduino-fundamentals/wire/">
+            
+                    
+                    I2C(Wire)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../3-arduino-fundamentals/adt74x0/">
+            
+                <a href="../3-arduino-fundamentals/adt74x0/">
+            
+                    
+                    ADT74x0(温度センサー)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../3-arduino-fundamentals/fiapupload/">
+            
+                <a href="../3-arduino-fundamentals/fiapupload/">
+            
+                    
+                    FIAPUploadAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../3-arduino-fundamentals/time/">
+            
+                <a href="../3-arduino-fundamentals/time/">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../3-arduino-fundamentals/localtime/">
+            
+                <a href="../3-arduino-fundamentals/localtime/">
+            
+                    
+                    LocalTimeLib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../3-arduino-fundamentals/ntp/">
+            
+                <a href="../3-arduino-fundamentals/ntp/">
+            
+                    
+                    NTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../3-arduino-fundamentals/serialcli/">
+            
+                <a href="../3-arduino-fundamentals/serialcli/">
+            
+                    
+                    SerialCLI(シリアルコンソール)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../3-arduino-fundamentals/dtostrf/">
+            
+                <a href="../3-arduino-fundamentals/dtostrf/">
+            
+                    
+                    浮動小数点を文字列にする(dtostrf)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../3-arduino-fundamentals/schedule/">
+            
+                <a href="../3-arduino-fundamentals/schedule/">
+            
+                    
+                    n秒ごとに実行する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../3-arduino-fundamentals/moving-average/">
+            
+                <a href="../3-arduino-fundamentals/moving-average/">
+            
+                    
+                    移動平均を取る
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../4-ieee1888/">
+            
+                <a href="../4-ieee1888/">
+            
+                    
+                    IEEE1888(FIAP)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4-ieee1888/keywords/">
+            
+                <a href="../4-ieee1888/keywords/">
+            
+                    
+                    基本用語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4-ieee1888/getting-started/">
+            
+                <a href="../4-ieee1888/getting-started/">
+            
+                    
+                    M2Mゲートウェイからアップロード
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4-ieee1888/code-reading/">
+            
+                <a href="../4-ieee1888/code-reading/">
+            
+                    
+                    解説 temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4-ieee1888/extending-temp-upload/">
+            
+                <a href="../4-ieee1888/extending-temp-upload/">
+            
+                    
+                    temp_uploadを拡張する
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >M2Mゲートウェイの準備</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="m2m&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x306E;&#x6E96;&#x5099;">M2M&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x306E;&#x6E96;&#x5099;</h1>
+<h2 id="&#x96FB;&#x6E90;">&#x96FB;&#x6E90;</h2>
+<p>&#x96FB;&#x6E90;&#x306F;6V&#x304B;&#x3089;12V&#xFF0C;&#x30BB;&#x30F3;&#x30BF;&#x30FC;&#x30D7;&#x30E9;&#x30B9;&#x306E;AC&#x30A2;&#x30C0;&#x30D7;&#x30BF;&#x304C;&#x4F7F;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;
+<img src="img/m2m-schematic.png" alt="">
+<img src="img/m2m-gw.png" alt=""></p>
+<h2 id="arduino&#x304B;&#x3089;&#x66F8;&#x304D;&#x8FBC;&#x307F;">Arduino&#x304B;&#x3089;&#x66F8;&#x304D;&#x8FBC;&#x307F;</h2>
+<h3 id="&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x30DC;&#x30FC;&#x30C9;&#x8A2D;&#x5B9A;">&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x30DC;&#x30FC;&#x30C9;&#x8A2D;&#x5B9A;</h3>
+<p>&#x307E;&#x305A;&#xFF0C;M2M&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3092;USB&#x30B1;&#x30FC;&#x30D6;&#x30EB;&#x3067;&#x30D1;&#x30BD;&#x30B3;&#x30F3;&#x306B;&#x63A5;&#x7D9A;&#x3057;&#x307E;&#x3059;&#xFF0E;&#x6B21;&#x306B;&#xFF0C;Arduino&#x3092;&#x6B63;&#x3057;&#x304F;&#x66F8;&#x304D;&#x8FBC;&#x3081;&#x308B;&#x3088;&#x3046;&#x306B;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#xFF0E;Arduino&#x306E;&#x30C4;&#x30FC;&#x30EB;&#x2192;&#x30DC;&#x30FC;&#x30C9;&#x2192;&quot;Arduino/Genuino Mega or Mega 2560&quot;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#xFF0E;&#x5FC5;&#x305A;&#x30D7;&#x30ED;&#x30BB;&#x30C3;&#x30B5;&#x30FC;&#x304C;&quot;ATmega 2560 (Mega 2560)&quot;&#x304C;&#x9078;&#x629E;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;
+<img src="img/arduino-setting.png" alt=""></p>
+<p>M2M&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3092;&#x30D1;&#x30BD;&#x30B3;&#x30F3;&#x306B;&#x63A5;&#x7D9A;&#x3059;&#x308B;&#x3068;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30C9;&#x30E9;&#x30A4;&#x30D0;&#x30FC;&#x304C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3055;&#x308C;&#xFF0C;&#x30C4;&#x30FC;&#x30EB;&#x2192;&#x30DD;&#x30FC;&#x30C8;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF0E;&#x30D1;&#x30BD;&#x30B3;&#x30F3;&#x306B;&#x8907;&#x6570;&#x306E;Arduino&#x3084;&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x901A;&#x4FE1;&#x6A5F;&#x5668;&#x304C;&#x63A5;&#x7D9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#xFF0C;&#x8907;&#x6570;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF0E;&#x5F53;&#x8A72;Arduino&#x306E;&#x63A5;&#x7D9A;&#x30DD;&#x30FC;&#x30C8;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;
+<img src="img/serial-port.png" alt=""></p>
+<h3 id="&#x66F8;&#x304D;&#x8FBC;&#x307F;">&#x66F8;&#x304D;&#x8FBC;&#x307F;</h3>
+<p>&#x3044;&#x3088;&#x3044;&#x3088;M2M&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x306B;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x8EE2;&#x9001;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p>Arduino&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x5DE6;&#x4E0A;&#x306E;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;
+<img src="img/upload.png" alt=""></p>
+<p>&#x6B63;&#x5E38;&#x306B;&#x8EE2;&#x9001;&#x3067;&#x304D;&#x305F;&#x5834;&#x5408;&#xFF0C;&#x3053;&#x306E;&#x3088;&#x3046;&#x306A;&#x8868;&#x793A;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF0E;
+<img src="img/done-uploading.png" alt=""></p>
+<p>&#x5931;&#x6557;&#x3057;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#xFF0C;&#x8A2D;&#x5B9A;&#x3084;&#x63A5;&#x7D9A;&#x3092;&#x3088;&#x304F;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x518D;&#x5EA6;&#x66F8;&#x304D;&#x8FBC;&#x3093;&#x3067;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../1-install-arduino/" class="navigation navigation-prev " aria-label="Previous page: Arduinoのインストール">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../3-arduino-fundamentals/" class="navigation navigation-next " aria-label="Next page: Arduinoの基礎">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"M2Mゲートウェイの準備","level":"1.3","depth":1,"next":{"title":"Arduinoの基礎","level":"1.4","depth":1,"path":"3-arduino-fundamentals/README.md","ref":"3-arduino-fundamentals/README.md","articles":[{"title":"Lチカ","level":"1.4.1","depth":2,"path":"3-arduino-fundamentals/blink/README.md","ref":"3-arduino-fundamentals/blink/README.md","articles":[]},{"title":"デジタル入出力","level":"1.4.2","depth":2,"path":"3-arduino-fundamentals/digital/README.md","ref":"3-arduino-fundamentals/digital/README.md","articles":[]},{"title":"アナログ入出力","level":"1.4.3","depth":2,"path":"3-arduino-fundamentals/analog/README.md","ref":"3-arduino-fundamentals/analog/README.md","articles":[]},{"title":"ライブラリの使い方","level":"1.4.4","depth":2,"path":"3-arduino-fundamentals/using-libraries/README.md","ref":"3-arduino-fundamentals/using-libraries/README.md","articles":[]},{"title":"シリアル通信(Serial)","level":"1.4.5","depth":2,"path":"3-arduino-fundamentals/serial/README.md","ref":"3-arduino-fundamentals/serial/README.md","articles":[]},{"title":"I2C(Wire)","level":"1.4.6","depth":2,"path":"3-arduino-fundamentals/wire/README.md","ref":"3-arduino-fundamentals/wire/README.md","articles":[]},{"title":"ADT74x0(温度センサー)","level":"1.4.7","depth":2,"path":"3-arduino-fundamentals/adt74x0/README.md","ref":"3-arduino-fundamentals/adt74x0/README.md","articles":[]},{"title":"FIAPUploadAgent","level":"1.4.8","depth":2,"path":"3-arduino-fundamentals/fiapupload/README.md","ref":"3-arduino-fundamentals/fiapupload/README.md","articles":[]},{"title":"Time","level":"1.4.9","depth":2,"path":"3-arduino-fundamentals/time/README.md","ref":"3-arduino-fundamentals/time/README.md","articles":[]},{"title":"LocalTimeLib","level":"1.4.10","depth":2,"path":"3-arduino-fundamentals/localtime/README.md","ref":"3-arduino-fundamentals/localtime/README.md","articles":[]},{"title":"NTP","level":"1.4.11","depth":2,"path":"3-arduino-fundamentals/ntp/README.md","ref":"3-arduino-fundamentals/ntp/README.md","articles":[]},{"title":"SerialCLI(シリアルコンソール)","level":"1.4.12","depth":2,"path":"3-arduino-fundamentals/serialcli/README.md","ref":"3-arduino-fundamentals/serialcli/README.md","articles":[]},{"title":"浮動小数点を文字列にする(dtostrf)","level":"1.4.13","depth":2,"path":"3-arduino-fundamentals/dtostrf/README.md","ref":"3-arduino-fundamentals/dtostrf/README.md","articles":[]},{"title":"n秒ごとに実行する","level":"1.4.14","depth":2,"path":"3-arduino-fundamentals/schedule/README.md","ref":"3-arduino-fundamentals/schedule/README.md","articles":[]},{"title":"移動平均を取る","level":"1.4.15","depth":2,"path":"3-arduino-fundamentals/moving-average/README.md","ref":"3-arduino-fundamentals/moving-average/README.md","articles":[]}]},"previous":{"title":"Arduinoのインストール","level":"1.2","depth":1,"path":"1-install-arduino/README.md","ref":"1-install-arduino/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-48046698-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"2-m2m-gateway-prepare/README.md","mtime":"2017-10-19T08:21:22.751Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-19T08:24:11.881Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

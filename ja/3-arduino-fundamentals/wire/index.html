@@ -1,0 +1,581 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>I2C(Wire) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../adt74x0/" />
+    
+    
+    <link rel="prev" href="../serial/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-install-arduino/">
+            
+                <a href="../../1-install-arduino/">
+            
+                    
+                    Arduinoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-m2m-gateway-prepare/">
+            
+                <a href="../../2-m2m-gateway-prepare/">
+            
+                    
+                    M2Mゲートウェイの準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Arduinoの基礎
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../blink/">
+            
+                <a href="../blink/">
+            
+                    
+                    Lチカ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../digital/">
+            
+                <a href="../digital/">
+            
+                    
+                    デジタル入出力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../analog/">
+            
+                <a href="../analog/">
+            
+                    
+                    アナログ入出力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../using-libraries/">
+            
+                <a href="../using-libraries/">
+            
+                    
+                    ライブラリの使い方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../serial/">
+            
+                <a href="../serial/">
+            
+                    
+                    シリアル通信(Serial)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    I2C(Wire)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../adt74x0/">
+            
+                <a href="../adt74x0/">
+            
+                    
+                    ADT74x0(温度センサー)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../fiapupload/">
+            
+                <a href="../fiapupload/">
+            
+                    
+                    FIAPUploadAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../time/">
+            
+                <a href="../time/">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../localtime/">
+            
+                <a href="../localtime/">
+            
+                    
+                    LocalTimeLib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../ntp/">
+            
+                <a href="../ntp/">
+            
+                    
+                    NTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../serialcli/">
+            
+                <a href="../serialcli/">
+            
+                    
+                    SerialCLI(シリアルコンソール)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../dtostrf/">
+            
+                <a href="../dtostrf/">
+            
+                    
+                    浮動小数点を文字列にする(dtostrf)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../schedule/">
+            
+                <a href="../schedule/">
+            
+                    
+                    n秒ごとに実行する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../moving-average/">
+            
+                <a href="../moving-average/">
+            
+                    
+                    移動平均を取る
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-ieee1888/">
+            
+                <a href="../../4-ieee1888/">
+            
+                    
+                    IEEE1888(FIAP)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-ieee1888/keywords/">
+            
+                <a href="../../4-ieee1888/keywords/">
+            
+                    
+                    基本用語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-ieee1888/getting-started/">
+            
+                <a href="../../4-ieee1888/getting-started/">
+            
+                    
+                    M2Mゲートウェイからアップロード
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4-ieee1888/code-reading/">
+            
+                <a href="../../4-ieee1888/code-reading/">
+            
+                    
+                    解説 temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../4-ieee1888/extending-temp-upload/">
+            
+                <a href="../../4-ieee1888/extending-temp-upload/">
+            
+                    
+                    temp_uploadを拡張する
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >I2C(Wire)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="i2cwire">I2C(Wire)</h2>
+<p>I2C&#x306F;&#x305F;&#x3063;&#x305F;&#xFF12;&#x672C;&#x306E;&#x7D50;&#x7DDA;&#x3067;&#x6700;&#x5927;&#xFF11;&#xFF11;&#xFF12;&#x30CE;&#x30FC;&#x30C9;&#x304C;&#x901A;&#x4FE1;&#x3067;&#x304D;&#x308B;&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x30D0;&#x30B9;&#x3067;&#x3059;&#xFF0E;&#x30DE;&#x30A4;&#x30B3;&#x30F3;&#x540C;&#x58EB;&#x306E;&#x901A;&#x4FE1;&#x3084;&#x30BB;&#x30F3;&#x30B5;&#x30FC;&#x304B;&#x3089;&#x306E;&#x60C5;&#x5831;&#x306E;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x306B;&#x5E83;&#x304F;&#x5229;&#x7528;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF0E;&#x901A;&#x4FE1;&#x306F;&#x5FC5;&#x305A;&#x30DE;&#x30B9;&#x30BF;&#x30FC;&#x304B;&#x3089;&#x958B;&#x59CB;&#x3055;&#x308C;&#xFF0C;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x305F;&#x30B9;&#x30EC;&#x30FC;&#x30D6;&#x306E;&#x307F;&#x304C;&#x8FD4;&#x4FE1;&#x3067;&#x304D;&#x308B;&#xFF11;&#x5BFE;n&#x306E;&#x30D0;&#x30B9;&#x3067;&#x3059;&#xFF0E;Arduin&#x3067;&#x306F;I2C&#x3092;Wire&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x304B;&#x3089;&#x6271;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
+<h3 id="i2c&#x30DE;&#x30B9;&#x30BF;&#x30FC;">I2C&#x30DE;&#x30B9;&#x30BF;&#x30FC;</h3>
+<p>&#x81EA;&#x5206;&#x304C;I2C&#x306E;&#x30DE;&#x30B9;&#x30BF;&#x30FC;&#x306B;&#x306A;&#x308A;&#xFF0C;&#x30B9;&#x30EC;&#x30FC;&#x30D6;&#x306E;&#x30BB;&#x30F3;&#x30B5;&#x30FC;&#x3084;&#x30DE;&#x30A4;&#x30B3;&#x30F3;&#x3068;&#x901A;&#x4FE1;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#xFF0E;</p>
+<p>&#x5FC5;&#x305A;&#x4F7F;&#x7528;&#x524D;&#x306B;<code>Wire.begin()</code>&#x3092;&#xFF11;&#x56DE;&#x3060;&#x3051;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x521D;&#x671F;&#x5316;&#x3092;&#x5FD8;&#x308C;&#x306A;&#x3044;&#x3067;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+<h4 id="&#x4E00;&#x65B9;&#x7684;&#x306A;&#x66F8;&#x304D;&#x8FBC;&#x307F;">&#x4E00;&#x65B9;&#x7684;&#x306A;&#x66F8;&#x304D;&#x8FBC;&#x307F;</h4>
+<p>&#x30DE;&#x30B9;&#x30BF;&#x30FC;&#x304B;&#x3089;&#x30B9;&#x30EC;&#x30FC;&#x30D6;&#x3078;&#x4E00;&#x65B9;&#x7684;&#x306B;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x307E;&#x3059;&#xFF0E;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x305F;&#x3044;&#x30C7;&#x30FC;&#x30BF;&#x91CF;&#x306B;&#x5408;&#x308F;&#x305B;&#x3066;<code>write</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x547C;&#x3073;&#x51FA;&#x3057;&#x56DE;&#x6570;&#x3092;&#x5897;&#x6E1B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+<pre><code class="lang-C++">byte address = <span class="hljs-number">0x48</span>;
+Wire.beginTransmission(address);
+Wire.write(<span class="hljs-number">0xAA</span>);
+Wire.write(<span class="hljs-number">0xBB</span>);
+Wire.endTransmission();
+</code></pre>
+<h4 id="&#x4E00;&#x65B9;&#x7684;&#x306A;&#x8AAD;&#x307F;&#x8FBC;&#x307F;">&#x4E00;&#x65B9;&#x7684;&#x306A;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</h4>
+<p>&#x30B9;&#x30EC;&#x30FC;&#x30D6;&#x304B;&#x3089;&#x4E00;&#x65B9;&#x7684;&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x307E;&#x3059;&#xFF0E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x305F;&#x3044;&#x30D0;&#x30A4;&#x30C8;&#x6570;&#x3092;&#x6700;&#x521D;&#x306B;&#x30B9;&#x30EC;&#x30FC;&#x30D6;&#x3078;&#x9001;&#x4FE1;&#x3057;&#x307E;&#x3059;&#xFF0E;&#x305D;&#x306E;&#x5F8C;&#xFF0C;&#x30B9;&#x30EC;&#x30FC;&#x30D6;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x304C;&#x9001;&#x4FE1;&#x3055;&#x308C;&#x307E;&#x3059;&#x306E;&#x3067;<code>Wire.read()</code>&#x3067;&#x53D7;&#x3051;&#x53D6;&#x308A;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-C++">byte address = <span class="hljs-number">0x48</span>;
+Wire.requestFrom(address, <span class="hljs-number">2</span>); <span class="hljs-comment">// request 2byte</span>
+
+<span class="hljs-keyword">while</span>(Wire.available()) {
+  byte val = Wire.read();
+}
+</code></pre>
+<h4 id="&#x66F8;&#x304D;&#x8FBC;&#x3093;&#x3067;&#x304B;&#x3089;&#x8AAD;&#x307F;&#x8FBC;&#x307F;">&#x66F8;&#x304D;&#x8FBC;&#x3093;&#x3067;&#x304B;&#x3089;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</h4>
+<p>&#x30DE;&#x30B9;&#x30BF;&#x30FC;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x66F8;&#x304D;&#x8FBC;&#x3093;&#x3067;&#x304B;&#x3089;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x307E;&#x3059;&#xFF0E;&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x756A;&#x53F7;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x5834;&#x5408;&#x306A;&#x3069;&#x306B;&#x4F7F;&#x308F;&#x308C;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-C++">byte address = <span class="hljs-number">0x48</span>;
+Wire.beginTransmission(address);
+Wire.write(<span class="hljs-number">0xAA</span>);
+Wire.endTransmission(<span class="hljs-literal">false</span>);
+
+Wire.requestFrom(address, <span class="hljs-number">1</span>, <span class="hljs-literal">true</span>);
+byte val = Wire.read();
+</code></pre>
+<h3 id="&#x3000;&#x3082;&#x3063;&#x3068;&#x8A73;&#x3057;&#x3044;&#x60C5;&#x5831;">&#x3000;&#x3082;&#x3063;&#x3068;&#x8A73;&#x3057;&#x3044;&#x60C5;&#x5831;</h3>
+<p>&#x3082;&#x3063;&#x3068;&#x308F;&#x304B;&#x308A;&#x3084;&#x3059;&#x304F;&#x66F8;&#x3044;&#x3066;&#x3042;&#x308B;&#x8A18;&#x4E8B;</p>
+<ul>
+<li><a href="https://qiita.com/MergeCells/items/20c3c1a0adfb222a19cd" target="_blank">Arduino&#x3092;30&#x5206;&#x3067;I2C&#x901A;&#x4FE1;&#x3059;&#x308B; - Qiita</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../serial/" class="navigation navigation-prev " aria-label="Previous page: シリアル通信(Serial)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../adt74x0/" class="navigation navigation-next " aria-label="Next page: ADT74x0(温度センサー)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"I2C(Wire)","level":"1.4.6","depth":2,"next":{"title":"ADT74x0(温度センサー)","level":"1.4.7","depth":2,"path":"3-arduino-fundamentals/adt74x0/README.md","ref":"3-arduino-fundamentals/adt74x0/README.md","articles":[]},"previous":{"title":"シリアル通信(Serial)","level":"1.4.5","depth":2,"path":"3-arduino-fundamentals/serial/README.md","ref":"3-arduino-fundamentals/serial/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-48046698-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"3-arduino-fundamentals/wire/README.md","mtime":"2017-10-19T08:21:22.769Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-19T08:24:11.881Z"},"basePath":"../..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

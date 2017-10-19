@@ -1,0 +1,568 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>アナログ入出力 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../using-libraries/" />
+    
+    
+    <link rel="prev" href="../digital/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-install-arduino/">
+            
+                <a href="../../1-install-arduino/">
+            
+                    
+                    Arduinoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-m2m-gateway-prepare/">
+            
+                <a href="../../2-m2m-gateway-prepare/">
+            
+                    
+                    M2Mゲートウェイの準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Arduinoの基礎
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../blink/">
+            
+                <a href="../blink/">
+            
+                    
+                    Lチカ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../digital/">
+            
+                <a href="../digital/">
+            
+                    
+                    デジタル入出力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    アナログ入出力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../using-libraries/">
+            
+                <a href="../using-libraries/">
+            
+                    
+                    ライブラリの使い方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../serial/">
+            
+                <a href="../serial/">
+            
+                    
+                    シリアル通信(Serial)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../wire/">
+            
+                <a href="../wire/">
+            
+                    
+                    I2C(Wire)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../adt74x0/">
+            
+                <a href="../adt74x0/">
+            
+                    
+                    ADT74x0(温度センサー)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../fiapupload/">
+            
+                <a href="../fiapupload/">
+            
+                    
+                    FIAPUploadAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../time/">
+            
+                <a href="../time/">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../localtime/">
+            
+                <a href="../localtime/">
+            
+                    
+                    LocalTimeLib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../ntp/">
+            
+                <a href="../ntp/">
+            
+                    
+                    NTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../serialcli/">
+            
+                <a href="../serialcli/">
+            
+                    
+                    SerialCLI(シリアルコンソール)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../dtostrf/">
+            
+                <a href="../dtostrf/">
+            
+                    
+                    浮動小数点を文字列にする(dtostrf)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../schedule/">
+            
+                <a href="../schedule/">
+            
+                    
+                    n秒ごとに実行する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../moving-average/">
+            
+                <a href="../moving-average/">
+            
+                    
+                    移動平均を取る
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-ieee1888/">
+            
+                <a href="../../4-ieee1888/">
+            
+                    
+                    IEEE1888(FIAP)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-ieee1888/keywords/">
+            
+                <a href="../../4-ieee1888/keywords/">
+            
+                    
+                    基本用語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-ieee1888/getting-started/">
+            
+                <a href="../../4-ieee1888/getting-started/">
+            
+                    
+                    M2Mゲートウェイからアップロード
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4-ieee1888/code-reading/">
+            
+                <a href="../../4-ieee1888/code-reading/">
+            
+                    
+                    解説 temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../4-ieee1888/extending-temp-upload/">
+            
+                <a href="../../4-ieee1888/extending-temp-upload/">
+            
+                    
+                    temp_uploadを拡張する
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >アナログ入出力</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x5165;&#x51FA;&#x529B;">&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x5165;&#x51FA;&#x529B;</h2>
+<h3 id="&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x5165;&#x529B;">&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x5165;&#x529B;</h3>
+<p>&#x660E;&#x308B;&#x3055;&#x3084;&#x6E29;&#x5EA6;&#x306A;&#x3069;&#x306E;&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x60C5;&#x5831;&#x3092;&#x96FB;&#x5727;&#x304B;&#x3089;&#x8AAD;&#x307F;&#x53D6;&#x308A;&#x307E;&#x3059;&#xFF0E;Arduino&#x306A;&#x3069;&#x306E;&#x30DE;&#x30A4;&#x30B3;&#x30F3;&#x3067;&#x306F;AD(&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x30FB;&#x30C7;&#x30B8;&#x30BF;&#x30EB;)&#x5909;&#x63DB;&#x5668;&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3059;&#xFF0E;AD&#x5909;&#x63DB;&#x5668;&#x306F;&#x5165;&#x529B;&#x96FB;&#x5727;&#x3092;&#x57FA;&#x6E96;&#x96FB;&#x5727;&#x3068;&#x6BD4;&#x8F03;&#x3057;&#x3066;&#x57FA;&#x6E96;&#x96FB;&#x5727;&#x304B;&#x3089;&#x306E;&#x6BD4;&#x3092;&#x51FA;&#x529B;&#x3057;&#x307E;&#x3059;&#xFF0E;AD&#x5909;&#x63DB;&#x5668;&#x306F;&#x5909;&#x63DB;&#x53EF;&#x80FD;&#x306A;&#x30D3;&#x30C3;&#x30C8;&#x6570;&#x304C;&#x6C7A;&#x307E;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF0E;Arduino&#x306E;&#x5909;&#x63DB;&#x5668;&#x306F;10bit&#x3067;&#x3059;&#xFF0E;AD&#x5909;&#x63DB;&#x5668;&#x3092;&#x64EC;&#x4F3C;&#x30B3;&#x30FC;&#x30C9;&#x3067;&#x66F8;&#x304F;&#x3068;&#x3053;&#x306E;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-C++"><span class="hljs-keyword">const</span> <span class="hljs-keyword">uint16_t</span> maxValue = <span class="hljs-number">1023</span>; <span class="hljs-comment">// 10bit -&gt; 0 ~ 1023</span>
+<span class="hljs-keyword">float</span> inputVoltage = <span class="hljs-number">3.1415</span>;
+<span class="hljs-keyword">float</span> referenceVoltage = <span class="hljs-number">5.001</span>;
+
+<span class="hljs-keyword">int</span> digitalValue = inputVoltage / referenceVoltage * <span class="hljs-number">1023</span>; <span class="hljs-comment">// 643</span>
+</code></pre>
+<p>&#x3061;&#x306A;&#x307F;&#x306B;&#x3053;&#x306E;&#x30C7;&#x30B8;&#x30BF;&#x30EB;&#x5024;&#x3092;&#x518D;&#x3073;&#x96FB;&#x5727;&#x306B;&#x623B;&#x3059;&#x306E;&#x3082;&#x7C21;&#x5358;&#x3067;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-C++"><span class="hljs-keyword">const</span> <span class="hljs-keyword">uint16_t</span> maxValue = <span class="hljs-number">1023</span>; <span class="hljs-comment">// 10bit -&gt; 0 ~ 1023</span>
+<span class="hljs-keyword">float</span> referenceVoltage = <span class="hljs-number">5.001</span>;
+<span class="hljs-keyword">int</span> digitalValue = <span class="hljs-number">643</span>;
+
+<span class="hljs-keyword">float</span> analogVoltage = <span class="hljs-number">643</span> / maxValue * referenceVoltage; <span class="hljs-comment">// 3.1433460411</span>
+</code></pre>
+<p>&#x5B9F;&#x969B;&#x306B;&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x5165;&#x529B;&#x3092;&#x3059;&#x308B;&#x306B;&#x306F;Arduino&#x306E;A0&#x304B;&#x3089;A5&#x30D4;&#x30F3;&#x306B;&#x96FB;&#x5727;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;<code>analogRead</code>&#x95A2;&#x6570;&#x3067;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3060;&#x3051;&#x3067;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-C++"><span class="hljs-keyword">uint16_t</span> val = analogRead(A0);
+</code></pre>
+<h3 id="&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x51FA;&#x529B;">&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x51FA;&#x529B;</h3>
+<p>&#x9006;&#x306B;&#xFF0C;&#x30C7;&#x30B8;&#x30BF;&#x30EB;&#x5024;&#x304B;&#x3089;&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x96FB;&#x5727;&#x3067;&#x51FA;&#x529B;&#x3059;&#x308B;&#x3082;&#x306E;&#x3092;DA&#x5909;&#x63DB;&#x5668;&#x3068;&#x8A00;&#x3044;&#x307E;&#x3059;&#xFF0E;&#x65B9;&#x5F0F;&#x306F;&#x305F;&#x304F;&#x3055;&#x3093;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#xFF0C;Arduino&#x3067;&#x306F;PWM(Pulse Width Modulation)&#x304C;&#x5229;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;PWM&#x306F;&#x4E00;&#x5B9A;&#x306E;&#x5468;&#x671F;&#x3067;&#x304B;&#x3064;&#x9AD8;&#x901F;&#x306B;&#x30C7;&#x30B8;&#x30BF;&#x30EB;&#x4FE1;&#x53F7;&#x306E;ON&#x30FB;OFF&#x3092;&#x5207;&#x308A;&#x66FF;&#x3048;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x3063;&#x3066;&#x96FB;&#x5727;&#x3092;&#x8868;&#x73FE;&#x3057;&#x307E;&#x3059;&#xFF0E;&#x9577;&#x671F;&#x7684;&#x306B;&#x898B;&#x308C;&#x3070;ON&#x3057;&#x3066;&#x3044;&#x308B;&#x6642;&#x9593;&#x306E;&#x307B;&#x3046;&#x304C;&#x591A;&#x3051;&#x308C;&#x3070;&#x96FB;&#x5727;&#x304C;&#x9AD8;&#x304F;&#xFF0C;OFF&#x3057;&#x3066;&#x3044;&#x308B;&#x6642;&#x9593;&#x306E;&#x307B;&#x3046;&#x304C;&#x77ED;&#x3051;&#x308C;&#x3070;&#x96FB;&#x5727;&#x306F;&#x4F4E;&#x304F;&#x898B;&#x3048;&#x307E;&#x3059;&#xFF0E;&#x3053;&#x306E;ON&#x3068;OFF&#x306E;&#x6642;&#x9593;&#x306E;&#x6BD4;&#x3092;&#x30C7;&#x30E5;&#x30FC;&#x30C6;&#x30A3;&#x30FC;&#x6BD4;&#x3068;&#x8A00;&#x3044;&#x307E;&#x3059;&#xFF0E;Arduino&#x306E;PWM&#x306F;8bit&#x3067;&#x6307;&#x5B9A;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;&#x305F;&#x3060;&#x3057;PWM&#x304C;&#x51FA;&#x529B;&#x3067;&#x304D;&#x308B;&#x306E;&#x306F;3,5,6,9,10,11&#x306E;6&#x30D4;&#x30F3;&#x3060;&#x3051;&#x3067;&#x3059;&#xFF0E;<code>analogWrite</code>&#x95A2;&#x6570;&#x306B;&#x30D4;&#x30F3;&#x3068;&#x30C7;&#x30E5;&#x30FC;&#x30C6;&#x30A3;&#x30FC;&#x6BD4;&#x3092;&#x6E21;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;&#x30C7;&#x30E5;&#x30FC;&#x30C6;&#x30A3;&#x30FC;&#x6BD4;&#x306F;0&#x3067;0[V]&#xFF0C;255&#x3067;&#x96FB;&#x6E90;&#x96FB;&#x5727;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-C++">analogWrite(<span class="hljs-number">3</span>, <span class="hljs-number">255</span>);
+</code></pre>
+<p>PWM&#x306F;&#x53B3;&#x5BC6;&#x306B;&#x8A00;&#x3048;&#x3070;&#x30C7;&#x30B8;&#x30BF;&#x30EB;&#x4FE1;&#x53F7;&#x3067;&#x3059;&#xFF0E;&#x5149;&#x306A;&#x3069;&#x306E;&#x9AD8;&#x901F;&#x306A;&#x5A92;&#x4F53;&#x3067;&#x306F;&#x30C1;&#x30E9;&#x30C4;&#x30AD;&#x304C;&#x554F;&#x984C;&#x306B;&#x306A;&#x308B;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF0E;&#x3053;&#x308C;&#x3092;&#x3088;&#x308A;&#x30A2;&#x30CA;&#x30ED;&#x30B0;&#x5024;&#x306B;&#x8FD1;&#x3065;&#x3051;&#x308B;&#x306B;&#x306F;&#x30B3;&#x30F3;&#x30C7;&#x30F3;&#x30B5;&#x3084;&#x62B5;&#x6297;&#x3067;&#x5E73;&#x6ED1;&#x56DE;&#x8DEF;&#x3092;&#x7D44;&#x307F;&#x8FBC;&#x3093;&#x3067;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../digital/" class="navigation navigation-prev " aria-label="Previous page: デジタル入出力">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../using-libraries/" class="navigation navigation-next " aria-label="Next page: ライブラリの使い方">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"アナログ入出力","level":"1.4.3","depth":2,"next":{"title":"ライブラリの使い方","level":"1.4.4","depth":2,"path":"3-arduino-fundamentals/using-libraries/README.md","ref":"3-arduino-fundamentals/using-libraries/README.md","articles":[]},"previous":{"title":"デジタル入出力","level":"1.4.2","depth":2,"path":"3-arduino-fundamentals/digital/README.md","ref":"3-arduino-fundamentals/digital/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-48046698-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"3-arduino-fundamentals/analog/README.md","mtime":"2017-10-19T08:21:22.758Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-19T08:24:11.881Z"},"basePath":"../..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

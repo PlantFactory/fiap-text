@@ -1,0 +1,579 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ライブラリの使い方 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../serial/" />
+    
+    
+    <link rel="prev" href="../analog/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-install-arduino/">
+            
+                <a href="../../1-install-arduino/">
+            
+                    
+                    Arduinoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-m2m-gateway-prepare/">
+            
+                <a href="../../2-m2m-gateway-prepare/">
+            
+                    
+                    M2Mゲートウェイの準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Arduinoの基礎
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../blink/">
+            
+                <a href="../blink/">
+            
+                    
+                    Lチカ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../digital/">
+            
+                <a href="../digital/">
+            
+                    
+                    デジタル入出力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../analog/">
+            
+                <a href="../analog/">
+            
+                    
+                    アナログ入出力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ライブラリの使い方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../serial/">
+            
+                <a href="../serial/">
+            
+                    
+                    シリアル通信(Serial)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../wire/">
+            
+                <a href="../wire/">
+            
+                    
+                    I2C(Wire)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../adt74x0/">
+            
+                <a href="../adt74x0/">
+            
+                    
+                    ADT74x0(温度センサー)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../fiapupload/">
+            
+                <a href="../fiapupload/">
+            
+                    
+                    FIAPUploadAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../time/">
+            
+                <a href="../time/">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../localtime/">
+            
+                <a href="../localtime/">
+            
+                    
+                    LocalTimeLib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../ntp/">
+            
+                <a href="../ntp/">
+            
+                    
+                    NTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../serialcli/">
+            
+                <a href="../serialcli/">
+            
+                    
+                    SerialCLI(シリアルコンソール)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../dtostrf/">
+            
+                <a href="../dtostrf/">
+            
+                    
+                    浮動小数点を文字列にする(dtostrf)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../schedule/">
+            
+                <a href="../schedule/">
+            
+                    
+                    n秒ごとに実行する
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../moving-average/">
+            
+                <a href="../moving-average/">
+            
+                    
+                    移動平均を取る
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-ieee1888/">
+            
+                <a href="../../4-ieee1888/">
+            
+                    
+                    IEEE1888(FIAP)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-ieee1888/keywords/">
+            
+                <a href="../../4-ieee1888/keywords/">
+            
+                    
+                    基本用語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-ieee1888/getting-started/">
+            
+                <a href="../../4-ieee1888/getting-started/">
+            
+                    
+                    M2Mゲートウェイからアップロード
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4-ieee1888/code-reading/">
+            
+                <a href="../../4-ieee1888/code-reading/">
+            
+                    
+                    解説 temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../4-ieee1888/extending-temp-upload/">
+            
+                <a href="../../4-ieee1888/extending-temp-upload/">
+            
+                    
+                    temp_uploadを拡張する
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ライブラリの使い方</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x4F7F;&#x3044;&#x65B9;">&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x4F7F;&#x3044;&#x65B9;</h2>
+<p>Arduino&#x3092;&#x4F7F;&#x3046;&#x4E0A;&#x3067;&#x4E00;&#x756A;&#x306E;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3067;&#x3042;&#x308B;&#x8C4A;&#x5BCC;&#x306A;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x4F7F;&#x3048;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;</p>
+<h3 id="&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h3>
+<p>&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x65B9;&#x6CD5;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#xFF13;&#x3064;&#x3067;&#x3059;&#xFF0E;</p>
+<ul>
+<li>&#x76F4;&#x63A5;libraries&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3078;&#x30B3;&#x30D4;&#x30FC;&#x3059;&#x308B;</li>
+<li>ZIP&#x5F62;&#x5F0F;&#x3067;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</li>
+<li>&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x304B;&#x3089;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</li>
+</ul>
+<h4 id="&#x76F4;&#x63A5;libraries&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3078;&#x30B3;&#x30D4;&#x30FC;&#x3059;&#x308B;">&#x76F4;&#x63A5;libraries&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3078;&#x30B3;&#x30D4;&#x30FC;&#x3059;&#x308B;</h4>
+<p>Arduino&#x306F;&#x30B9;&#x30B1;&#x30C3;&#x30C1;&#x3084;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x3054;&#x3068;&#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x7BA1;&#x7406;&#x3059;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#xFF0E;Windows&#x306E;&#x5834;&#x5408;&#x306F;<code>%USER_PROFILE%\Documents\Arduino</code>&#xFF0C;Linux&#x306F;<code>~/Arduino</code>&#xFF0C;macOS&#x306F;<code>~/Documetns/Arduino</code>&#x306B;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF0E;&#xFF08;&#x8A2D;&#x5B9A;&#x306B;&#x3088;&#x3063;&#x3066;&#x306F;&#x7570;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF09;&#x305D;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;<code>libraries</code>&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x3042;&#x308B;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x304C;&#xFF0C;&#x3053;&#x3053;&#x304C;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x5148;&#x3067;&#x3059;&#xFF0E;</p>
+<p>&#x3053;&#x3053;&#x306B;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x540D;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3057;&#xFF0C;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30D8;&#x30C3;&#x30C0;&#x30FC;&#x3084;&#x30BD;&#x30FC;&#x30B9;&#x3092;&#x8A2D;&#x7F6E;&#x3057;&#x3066;&#x7D42;&#x4E86;&#x3067;&#x3059;&#xFF0E;</p>
+<h4 id="zip&#x5F62;&#x5F0F;&#x3067;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;">ZIP&#x5F62;&#x5F0F;&#x3067;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</h4>
+<p>&#x4E00;&#x822C;&#x7684;&#x306B;Arduino&#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306F;ZIP&#x5F62;&#x5F0F;&#x3067;&#x5727;&#x7E2E;&#x3057;&#x3066;&#x914D;&#x5E03;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF0E;&#x3053;&#x306E;&#x5F62;&#x5F0F;&#x306F;Arduino&#x306E;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x7C21;&#x5358;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
+<p>&#x4F8B;&#x3068;&#x3057;&#x3066;ADT74x0&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;</p>
+<p>&#x307E;&#x305A;&#xFF0C;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x307E;&#x3059;&#xFF0E;Github&#x3067;&#x516C;&#x958B;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;Arduino&#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306F;&#x69CB;&#x9020;&#x7684;&#x306B;&#x305D;&#x306E;&#x307E;&#x307E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#x3053;&#x3068;&#x304C;&#x591A;&#x3044;&#x3067;&#x3059;&#xFF0E;Github&#x304B;&#x3089;ZIP&#x5F62;&#x5F0F;&#x3067;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;
+<img src="img/download-from-github.png" alt=""></p>
+<p>Arduino&#x306E;&#x30B9;&#x30B1;&#x30C3;&#x30C1;&#x2192;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30AF;&#x30EB;&#x30FC;&#x30C9;&#x2192;.ZIP&#x5F62;&#x5F0F;&#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;
+<img src="img/add-zip.png" alt=""></p>
+<p>&#x5148;&#x307B;&#x3069;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F;ZIP&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;
+<img src="img/select-zip.png" alt=""></p>
+<p>&#x3053;&#x306E;&#x8868;&#x793A;&#x304C;&#x51FA;&#x308C;&#x3070;&#x6B63;&#x5E38;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#xFF0E;
+<img src="img/added-library-from-zip.png" alt=""></p>
+<h4 id="&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x304B;&#x3089;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;">&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x304B;&#x3089;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</h4>
+<p>Arduino&#x306B;&#x306F;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF0E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306B;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x304C;&#x3042;&#x3063;&#x305F;&#x5834;&#x5408;&#x306B;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x901A;&#x77E5;&#x3055;&#x308C;&#x308B;&#x306A;&#x3069;&#x4FBF;&#x5229;&#x3067;&#x3059;&#xFF0E;&#x305F;&#x3060;&#xFF0C;&#x3053;&#x308C;&#x306F;&#x5BFE;&#x5FDC;&#x3057;&#x3066;&#x3044;&#x308B;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x304C;&#x9650;&#x3089;&#x308C;&#x307E;&#x3059;&#xFF0E;&#x307E;&#x305A;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x305F;&#x3044;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x691C;&#x7D22;&#x3057;&#xFF0C;&#x30D2;&#x30C3;&#x30C8;&#x3057;&#x306A;&#x304B;&#x3063;&#x305F;&#x3068;&#x304D;&#x306F;ZIP&#x5F62;&#x5F0F;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3084;&#x76F4;&#x63A5;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x8A66;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+<p>&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x3092;&#x958B;&#x304F;&#x306B;&#x306F;&#xFF0C;&#x30B9;&#x30B1;&#x30C3;&#x30C1;&#x2192;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30AF;&#x30EB;&#x30FC;&#x30C9;&#x2192;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x7BA1;&#x7406;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;
+<img src="img/enter-library-manager.png" alt=""></p>
+<p>&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x30DE;&#x30CD;&#x30FC;&#x30B8;&#x30E3;&#x304C;&#x958B;&#x3044;&#x305F;&#x3089;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x691C;&#x7D22;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x305F;&#x3044;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x9078;&#x629E;&#x3068;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30DC;&#x30BF;&#x30F3;&#x304C;&#x51FA;&#x73FE;&#x3057;&#x307E;&#x3059;&#xFF0E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x9078;&#x629E;&#x3057;&#x305F;&#x5F8C;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;&#x3053;&#x3068;&#x3067;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x304C;&#x958B;&#x59CB;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF0E;
+<img src="img/install-from-library-manager.png" alt=""></p>
+<h3 id="&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30AF;&#x30EB;&#x30FC;&#x30C9;">&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30AF;&#x30EB;&#x30FC;&#x30C9;</h3>
+<p>&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x30B9;&#x30B1;&#x30C3;&#x30C1;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x306F;&#x30D8;&#x30C3;&#x30C0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30A4;&#x30F3;&#x30AF;&#x30EB;&#x30FC;&#x30C9;&#x304C;&#x5FC5;&#x8981;&#x3067;&#x3059;&#xFF0E;&#x624B;&#x66F8;&#x304D;&#x3067;<code>#include...</code>&#x3068;&#x5165;&#x529B;&#x3057;&#x3066;&#x3082;&#x52D5;&#x4F5C;&#x3057;&#x307E;&#x3059;&#x304C;&#xFF0C;Arduino&#x306B;&#x8A8D;&#x8B58;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x5834;&#x5408;&#xFF0C;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x8FFD;&#x52A0;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
+<p>&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x30A4;&#x30F3;&#x30AF;&#x30EB;&#x30FC;&#x30C9;&#x3059;&#x308B;&#x306B;&#x306F;&#xFF0C;&#x30B9;&#x30B1;&#x30C3;&#x30C1;&#x2192;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30A4;&#x30F3;&#x30AF;&#x30EB;&#x30FC;&#x30C9;&#x3092;&#x958B;&#x304D;&#x307E;&#x3059;&#xFF0E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x4E00;&#x89A7;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#xFF0C;&#x30A4;&#x30F3;&#x30AF;&#x30EB;&#x30FC;&#x30C9;&#x3057;&#x305F;&#x3044;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;
+<img src="img/select-library.png" alt=""></p>
+<p>&#x3059;&#x308B;&#x3068;&#x30B9;&#x30B1;&#x30C3;&#x30C1;&#x306E;&#x4E0A;&#x90E8;&#x306B;&#x9078;&#x629E;&#x3057;&#x305F;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;<code>#include...</code>&#x304C;&#x8FFD;&#x8A18;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF0E;
+<img src="img/library-has-included.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../analog/" class="navigation navigation-prev " aria-label="Previous page: アナログ入出力">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../serial/" class="navigation navigation-next " aria-label="Next page: シリアル通信(Serial)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ライブラリの使い方","level":"1.4.4","depth":2,"next":{"title":"シリアル通信(Serial)","level":"1.4.5","depth":2,"path":"3-arduino-fundamentals/serial/README.md","ref":"3-arduino-fundamentals/serial/README.md","articles":[]},"previous":{"title":"アナログ入出力","level":"1.4.3","depth":2,"path":"3-arduino-fundamentals/analog/README.md","ref":"3-arduino-fundamentals/analog/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-48046698-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"3-arduino-fundamentals/using-libraries/README.md","mtime":"2017-10-19T08:21:22.764Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-19T08:24:11.881Z"},"basePath":"../..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
