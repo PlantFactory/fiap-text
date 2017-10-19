@@ -1,0 +1,18 @@
+{
+  "name": "fiap-text",
+  "version": "0.0.1",
+  "description": "FIAP Textbook",
+  "main": "index.js",
+  "repository": "https://github.com/ainehanta/fiap-text",
+  "author": "Makoto Uju",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "gitbook-cli": "^2.3.2"
+  },
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build",
+    "publish": "gh-pages -d _book"
+  }
+}
