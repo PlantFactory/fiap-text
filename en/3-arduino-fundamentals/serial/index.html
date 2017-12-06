@@ -1,0 +1,562 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Serial · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../wire/" />
+    
+    
+    <link rel="prev" href="../using-libraries/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-install-arduino/">
+            
+                <a href="../../1-install-arduino/">
+            
+                    
+                    Install Arduino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-m2m-gateway-prepare/">
+            
+                <a href="../../2-m2m-gateway-prepare/">
+            
+                    
+                    M2M Gateway preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Arduino Fundamentals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../blink/">
+            
+                <a href="../blink/">
+            
+                    
+                    LED Blink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../digital/">
+            
+                <a href="../digital/">
+            
+                    
+                    Digital Input / output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../analog/">
+            
+                <a href="../analog/">
+            
+                    
+                    Analog Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../using-libraries/">
+            
+                <a href="../using-libraries/">
+            
+                    
+                    Using libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Serial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../wire/">
+            
+                <a href="../wire/">
+            
+                    
+                    I2C(Wire)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../adt74x0/">
+            
+                <a href="../adt74x0/">
+            
+                    
+                    ADT74x0(Temperature Sensor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../fiapupload/">
+            
+                <a href="../fiapupload/">
+            
+                    
+                    FIAPUploadAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../time/">
+            
+                <a href="../time/">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../localtime/">
+            
+                <a href="../localtime/">
+            
+                    
+                    LocalTimeLib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../ntp/">
+            
+                <a href="../ntp/">
+            
+                    
+                    NTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../serialcli/">
+            
+                <a href="../serialcli/">
+            
+                    
+                    SerialCLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../dtostrf/">
+            
+                <a href="../dtostrf/">
+            
+                    
+                    Convert floating point a character string(dtostrf)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../schedule/">
+            
+                <a href="../schedule/">
+            
+                    
+                    Run every n seconds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../moving-average/">
+            
+                <a href="../moving-average/">
+            
+                    
+                    Moving Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-ieee1888/">
+            
+                <a href="../../4-ieee1888/">
+            
+                    
+                    IEEE1888(FIAP)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-ieee1888/keywords/">
+            
+                <a href="../../4-ieee1888/keywords/">
+            
+                    
+                    Keywords
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-ieee1888/getting-started/">
+            
+                <a href="../../4-ieee1888/getting-started/">
+            
+                    
+                    Upload from M2M gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4-ieee1888/code-reading/">
+            
+                <a href="../../4-ieee1888/code-reading/">
+            
+                    
+                    Description temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../4-ieee1888/extending-temp-upload/">
+            
+                <a href="../../4-ieee1888/extending-temp-upload/">
+            
+                    
+                    Extend temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Serial</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="how-to-use-serial-communication-serial">How to use serial communication (Serial)</h2>
+<p>This library may be the most helpful in using Arduino. It communicates with hosts and other devices using built-in UART. Some chips may have multiple serials. In that case, the asterisk of <code>Serial *</code> will change to interface number.</p>
+<h3 id="initialization">Initialization</h3>
+<p>Let&apos;s initialize first. You can set the baud rate and parity here, please refer to the <a href="https://www.arduino.cc/en/Serial/Begin" target="_blank">official reference</a> for details.</p>
+<pre><code class="lang-C++">Serial.begin(<span class="hljs-number">9600</span>); <span class="hljs-comment">// Initialize serial to 9600bps</span>
+</code></pre>
+<h3 id="communication">Communication</h3>
+<p>After that is just communication.</p>
+<pre><code class="lang-C++">Serial.print(<span class="hljs-string">&quot;AAA&quot;</span>); <span class="hljs-comment">// No line break</span>
+Serial.println(<span class="hljs-string">&quot;BBB&quot;</span>); <span class="hljs-comment">// Line break</span>
+<span class="hljs-comment">// output&gt; AAABBB</span>
+</code></pre>
+<h3 id="reduce-ram-capacity">Reduce RAM capacity</h3>
+<p>The AVR adopted by Arduino is the Harvard architecture, and the program ROM and RAM have independent buses. Since this value can not be accessed directly from the program ROM, it is necessary to temporarily copy it to RAM using a dedicated library. For such use, character strings normally present in the code are expanded into the RAM by the activation routine at startup. In other words, as the number of strings increases, RAM is exhausted even if it is not used.</p>
+<p>Therefore, as mentioned above, you can use a library that copies data from program ROM to RAM, but it is troublesome to say clearly. That&apos;s why <code>Serial</code> has a <code>_F ()</code>macro. If you use <code>Serial</code> directly as a string literal, rewrite and put the string in the program ROM as follows.</p>
+<pre><code class="lang-C++">Serial.println(<span class="hljs-string">&quot;Hello&quot;</span>); <span class="hljs-comment">// placed on RAM</span>
+Serial.println(_F(<span class="hljs-string">&quot;Hello&quot;</span>)); <span class="hljs-comment">// placed on ROM</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../using-libraries/" class="navigation navigation-prev " aria-label="Previous page: Using libraries">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../wire/" class="navigation navigation-next " aria-label="Next page: I2C(Wire)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Serial","level":"1.4.5","depth":2,"next":{"title":"I2C(Wire)","level":"1.4.6","depth":2,"path":"3-arduino-fundamentals/wire/README.md","ref":"3-arduino-fundamentals/wire/README.md","articles":[]},"previous":{"title":"Using libraries","level":"1.4.4","depth":2,"path":"3-arduino-fundamentals/using-libraries/README.md","ref":"3-arduino-fundamentals/using-libraries/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-48046698-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"3-arduino-fundamentals/serial/README.md","mtime":"2017-12-04T17:53:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-06T09:33:43.421Z"},"basePath":"../..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,562 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>M2M Gateway preparation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../3-arduino-fundamentals/" />
+    
+    
+    <link rel="prev" href="../1-install-arduino/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1-install-arduino/">
+            
+                <a href="../1-install-arduino/">
+            
+                    
+                    Install Arduino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    M2M Gateway preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3-arduino-fundamentals/">
+            
+                <a href="../3-arduino-fundamentals/">
+            
+                    
+                    Arduino Fundamentals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3-arduino-fundamentals/blink/">
+            
+                <a href="../3-arduino-fundamentals/blink/">
+            
+                    
+                    LED Blink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3-arduino-fundamentals/digital/">
+            
+                <a href="../3-arduino-fundamentals/digital/">
+            
+                    
+                    Digital Input / output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3-arduino-fundamentals/analog/">
+            
+                <a href="../3-arduino-fundamentals/analog/">
+            
+                    
+                    Analog Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3-arduino-fundamentals/using-libraries/">
+            
+                <a href="../3-arduino-fundamentals/using-libraries/">
+            
+                    
+                    Using libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3-arduino-fundamentals/serial/">
+            
+                <a href="../3-arduino-fundamentals/serial/">
+            
+                    
+                    Serial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../3-arduino-fundamentals/wire/">
+            
+                <a href="../3-arduino-fundamentals/wire/">
+            
+                    
+                    I2C(Wire)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../3-arduino-fundamentals/adt74x0/">
+            
+                <a href="../3-arduino-fundamentals/adt74x0/">
+            
+                    
+                    ADT74x0(Temperature Sensor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../3-arduino-fundamentals/fiapupload/">
+            
+                <a href="../3-arduino-fundamentals/fiapupload/">
+            
+                    
+                    FIAPUploadAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../3-arduino-fundamentals/time/">
+            
+                <a href="../3-arduino-fundamentals/time/">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../3-arduino-fundamentals/localtime/">
+            
+                <a href="../3-arduino-fundamentals/localtime/">
+            
+                    
+                    LocalTimeLib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../3-arduino-fundamentals/ntp/">
+            
+                <a href="../3-arduino-fundamentals/ntp/">
+            
+                    
+                    NTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../3-arduino-fundamentals/serialcli/">
+            
+                <a href="../3-arduino-fundamentals/serialcli/">
+            
+                    
+                    SerialCLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../3-arduino-fundamentals/dtostrf/">
+            
+                <a href="../3-arduino-fundamentals/dtostrf/">
+            
+                    
+                    Convert floating point a character string(dtostrf)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../3-arduino-fundamentals/schedule/">
+            
+                <a href="../3-arduino-fundamentals/schedule/">
+            
+                    
+                    Run every n seconds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../3-arduino-fundamentals/moving-average/">
+            
+                <a href="../3-arduino-fundamentals/moving-average/">
+            
+                    
+                    Moving Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../4-ieee1888/">
+            
+                <a href="../4-ieee1888/">
+            
+                    
+                    IEEE1888(FIAP)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4-ieee1888/keywords/">
+            
+                <a href="../4-ieee1888/keywords/">
+            
+                    
+                    Keywords
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4-ieee1888/getting-started/">
+            
+                <a href="../4-ieee1888/getting-started/">
+            
+                    
+                    Upload from M2M gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4-ieee1888/code-reading/">
+            
+                <a href="../4-ieee1888/code-reading/">
+            
+                    
+                    Description temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4-ieee1888/extending-temp-upload/">
+            
+                <a href="../4-ieee1888/extending-temp-upload/">
+            
+                    
+                    Extend temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >M2M Gateway preparation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="m2m-gateway-preparation">M2M Gateway preparation</h1>
+<h2 id="power-supply">Power Supply</h2>
+<p>The M2M gateway can accept an input voltage of 6V to 12V,a center positive AC adaptor can be used.
+<img src="img/m2m-schematic.png" alt="">
+<img src="img/m2m-gw.png" alt=""></p>
+<h2 id="arduino-settings">Arduino settings</h2>
+<h3 id="change-the-board-setting">Change the board setting</h3>
+<p>First, connect the M2M gateway to your computer with a USB cable. Next, select the Arduino board under &quot;Tools&quot; &#x2192; &quot;Board&quot; &#x2192; &quot;Arduino/Genuino Mega or Mega 2560&quot; Then under &quot;Processor&quot;, select &quot;ATmega 2560 (Mega 2560)&quot;. It is important to ensure that the correct processor is selected.
+<img src="img/arduino-setting.png" alt=""></p>
+<p>When you connect the M2M gateway to your computer, the drivers will automatically install. The device will be displayed under &quot;Tools&quot; &#x2192; &quot;Port&quot;. If there are multiple Arduinos or serial communication devices connected to your computer, multiple devices will be shown under &quot;Port&quot;. Ensure that the correct Arduino is selected.
+<img src="img/serial-port.png" alt=""></p>
+<h3 id="uploading-to-the-arduino">Uploading to the Arduino</h3>
+<p>It&apos;s finally time to upload a program to the M2M gateway</p>
+<p>Click the upload button in the upper left corner of the Arduino window.
+<img src="img/upload.png" alt=""></p>
+<p>If the uploading is successful, you will see a confirmation message saying &quot;Done uploading&quot;
+<img src="img/done-uploading.png" alt=""></p>
+<p>If the uploading fails, check the settings and connection carefully, then try uploading again.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../1-install-arduino/" class="navigation navigation-prev " aria-label="Previous page: Install Arduino">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../3-arduino-fundamentals/" class="navigation navigation-next " aria-label="Next page: Arduino Fundamentals">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"M2M Gateway preparation","level":"1.3","depth":1,"next":{"title":"Arduino Fundamentals","level":"1.4","depth":1,"path":"3-arduino-fundamentals/README.md","ref":"3-arduino-fundamentals/README.md","articles":[{"title":"LED Blink","level":"1.4.1","depth":2,"path":"3-arduino-fundamentals/blink/README.md","ref":"3-arduino-fundamentals/blink/README.md","articles":[]},{"title":"Digital Input / output","level":"1.4.2","depth":2,"path":"3-arduino-fundamentals/digital/README.md","ref":"3-arduino-fundamentals/digital/README.md","articles":[]},{"title":"Analog Output","level":"1.4.3","depth":2,"path":"3-arduino-fundamentals/analog/README.md","ref":"3-arduino-fundamentals/analog/README.md","articles":[]},{"title":"Using libraries","level":"1.4.4","depth":2,"path":"3-arduino-fundamentals/using-libraries/README.md","ref":"3-arduino-fundamentals/using-libraries/README.md","articles":[]},{"title":"Serial","level":"1.4.5","depth":2,"path":"3-arduino-fundamentals/serial/README.md","ref":"3-arduino-fundamentals/serial/README.md","articles":[]},{"title":"I2C(Wire)","level":"1.4.6","depth":2,"path":"3-arduino-fundamentals/wire/README.md","ref":"3-arduino-fundamentals/wire/README.md","articles":[]},{"title":"ADT74x0(Temperature Sensor)","level":"1.4.7","depth":2,"path":"3-arduino-fundamentals/adt74x0/README.md","ref":"3-arduino-fundamentals/adt74x0/README.md","articles":[]},{"title":"FIAPUploadAgent","level":"1.4.8","depth":2,"path":"3-arduino-fundamentals/fiapupload/README.md","ref":"3-arduino-fundamentals/fiapupload/README.md","articles":[]},{"title":"Time","level":"1.4.9","depth":2,"path":"3-arduino-fundamentals/time/README.md","ref":"3-arduino-fundamentals/time/README.md","articles":[]},{"title":"LocalTimeLib","level":"1.4.10","depth":2,"path":"3-arduino-fundamentals/localtime/README.md","ref":"3-arduino-fundamentals/localtime/README.md","articles":[]},{"title":"NTP","level":"1.4.11","depth":2,"path":"3-arduino-fundamentals/ntp/README.md","ref":"3-arduino-fundamentals/ntp/README.md","articles":[]},{"title":"SerialCLI","level":"1.4.12","depth":2,"path":"3-arduino-fundamentals/serialcli/README.md","ref":"3-arduino-fundamentals/serialcli/README.md","articles":[]},{"title":"Convert floating point a character string(dtostrf)","level":"1.4.13","depth":2,"path":"3-arduino-fundamentals/dtostrf/README.md","ref":"3-arduino-fundamentals/dtostrf/README.md","articles":[]},{"title":"Run every n seconds","level":"1.4.14","depth":2,"path":"3-arduino-fundamentals/schedule/README.md","ref":"3-arduino-fundamentals/schedule/README.md","articles":[]},{"title":"Moving Average","level":"1.4.15","depth":2,"path":"3-arduino-fundamentals/moving-average/README.md","ref":"3-arduino-fundamentals/moving-average/README.md","articles":[]}]},"previous":{"title":"Install Arduino","level":"1.2","depth":1,"path":"1-install-arduino/README.md","ref":"1-install-arduino/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-48046698-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"2-m2m-gateway-prepare/README.md","mtime":"2017-11-16T12:33:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-06T09:33:43.421Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

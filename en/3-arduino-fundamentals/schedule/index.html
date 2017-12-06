@@ -1,0 +1,578 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Run every n seconds · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../moving-average/" />
+    
+    
+    <link rel="prev" href="../dtostrf/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-install-arduino/">
+            
+                <a href="../../1-install-arduino/">
+            
+                    
+                    Install Arduino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-m2m-gateway-prepare/">
+            
+                <a href="../../2-m2m-gateway-prepare/">
+            
+                    
+                    M2M Gateway preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Arduino Fundamentals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../blink/">
+            
+                <a href="../blink/">
+            
+                    
+                    LED Blink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../digital/">
+            
+                <a href="../digital/">
+            
+                    
+                    Digital Input / output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../analog/">
+            
+                <a href="../analog/">
+            
+                    
+                    Analog Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../using-libraries/">
+            
+                <a href="../using-libraries/">
+            
+                    
+                    Using libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../serial/">
+            
+                <a href="../serial/">
+            
+                    
+                    Serial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../wire/">
+            
+                <a href="../wire/">
+            
+                    
+                    I2C(Wire)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../adt74x0/">
+            
+                <a href="../adt74x0/">
+            
+                    
+                    ADT74x0(Temperature Sensor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../fiapupload/">
+            
+                <a href="../fiapupload/">
+            
+                    
+                    FIAPUploadAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../time/">
+            
+                <a href="../time/">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../localtime/">
+            
+                <a href="../localtime/">
+            
+                    
+                    LocalTimeLib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../ntp/">
+            
+                <a href="../ntp/">
+            
+                    
+                    NTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../serialcli/">
+            
+                <a href="../serialcli/">
+            
+                    
+                    SerialCLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../dtostrf/">
+            
+                <a href="../dtostrf/">
+            
+                    
+                    Convert floating point a character string(dtostrf)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Run every n seconds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../moving-average/">
+            
+                <a href="../moving-average/">
+            
+                    
+                    Moving Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-ieee1888/">
+            
+                <a href="../../4-ieee1888/">
+            
+                    
+                    IEEE1888(FIAP)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-ieee1888/keywords/">
+            
+                <a href="../../4-ieee1888/keywords/">
+            
+                    
+                    Keywords
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-ieee1888/getting-started/">
+            
+                <a href="../../4-ieee1888/getting-started/">
+            
+                    
+                    Upload from M2M gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4-ieee1888/code-reading/">
+            
+                <a href="../../4-ieee1888/code-reading/">
+            
+                    
+                    Description temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../4-ieee1888/extending-temp-upload/">
+            
+                <a href="../../4-ieee1888/extending-temp-upload/">
+            
+                    
+                    Extend temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Run every n seconds</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="run-every-n-seconds">Run every n seconds</h2>
+<p>In an application that regularly measures with a sensor, you would want to acquire data from the sensor every n seconds. Here, we will explain the scheduling method for executing every n seconds using the Time library.</p>
+<h3 id="run-every-second">Run every second</h3>
+<p>Arduino loops the <code>loop</code> function indefinitely after executing the<code>setup</code> function. In general it is not good to stop the <code>loop</code> function so we will let it continue looping. That means that n seconds elapsed counts are done without using the <code>delay</code> function. The key point to doing this is the Time library. The Time library can get the current number of seconds. &#xFF11;&#x30EB;&#x30FC;&#x30D7;&#x524D;&#x306E;&#x79D2;&#x6570;&#x3068;&#x6BD4;&#x8F03;&#x3057;&#x3066;&#x7570;&#x306A;&#x308C;&#x3070;&#xFF11;&#x79D2;&#x304C;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;&#x3057;&#x305F;&#x30BF;&#x30A4;&#x30DF;&#x30F3;&#x30B0;&#x3068;&#x8A00;&#x3048;&#x307E;&#x3059;&#xFF0E;Processing can be executed in one second cycles if processing is done here.</p>
+<pre><code class="lang-C++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Time.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">time_t</span> old_epoch = <span class="hljs-number">0</span>, epoch;
+
+  epoch = now();
+
+  <span class="hljs-keyword">if</span>(epoch != old_epoch) {
+    <span class="hljs-comment">// runs at once in every second</span>
+  }
+}
+</code></pre>
+<h3 id="run-every-minute-n-seconds">Run every minute n seconds</h3>
+<p>Now you can run it once per second, so let&apos;s run it every minute n seconds. It can be done simply by executing it only when the current seconds number is 0 second.</p>
+<pre><code class="lang-C++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Time.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">time_t</span> old_epoch = <span class="hljs-number">0</span>, epoch;
+
+  epoch = now();
+
+  <span class="hljs-keyword">if</span>(epoch != old_epoch) {
+    <span class="hljs-comment">// runs at once in every second</span>
+    <span class="hljs-keyword">if</span>(epoch % <span class="hljs-number">60</span> == <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">// runs at once in every minute</span>
+    }
+  }
+}
+</code></pre>
+<p>However, if this method is used, if the next execution timing is shorter than the processing time, skip it and it will not be executed, so always be concerned about processing time. It is desirable to end within 1 second</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../dtostrf/" class="navigation navigation-prev " aria-label="Previous page: Convert floating point a character string(dtostrf)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../moving-average/" class="navigation navigation-next " aria-label="Next page: Moving Average">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Run every n seconds","level":"1.4.14","depth":2,"next":{"title":"Moving Average","level":"1.4.15","depth":2,"path":"3-arduino-fundamentals/moving-average/README.md","ref":"3-arduino-fundamentals/moving-average/README.md","articles":[]},"previous":{"title":"Convert floating point a character string(dtostrf)","level":"1.4.13","depth":2,"path":"3-arduino-fundamentals/dtostrf/README.md","ref":"3-arduino-fundamentals/dtostrf/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-48046698-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"3-arduino-fundamentals/schedule/README.md","mtime":"2017-12-05T08:25:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-06T09:33:43.421Z"},"basePath":"../..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SerialCLI · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dtostrf/" />
+    
+    
+    <link rel="prev" href="../ntp/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-install-arduino/">
+            
+                <a href="../../1-install-arduino/">
+            
+                    
+                    Install Arduino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-m2m-gateway-prepare/">
+            
+                <a href="../../2-m2m-gateway-prepare/">
+            
+                    
+                    M2M Gateway preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Arduino Fundamentals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../blink/">
+            
+                <a href="../blink/">
+            
+                    
+                    LED Blink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../digital/">
+            
+                <a href="../digital/">
+            
+                    
+                    Digital Input / output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../analog/">
+            
+                <a href="../analog/">
+            
+                    
+                    Analog Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../using-libraries/">
+            
+                <a href="../using-libraries/">
+            
+                    
+                    Using libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../serial/">
+            
+                <a href="../serial/">
+            
+                    
+                    Serial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../wire/">
+            
+                <a href="../wire/">
+            
+                    
+                    I2C(Wire)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../adt74x0/">
+            
+                <a href="../adt74x0/">
+            
+                    
+                    ADT74x0(Temperature Sensor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../fiapupload/">
+            
+                <a href="../fiapupload/">
+            
+                    
+                    FIAPUploadAgent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../time/">
+            
+                <a href="../time/">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../localtime/">
+            
+                <a href="../localtime/">
+            
+                    
+                    LocalTimeLib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../ntp/">
+            
+                <a href="../ntp/">
+            
+                    
+                    NTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    SerialCLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../dtostrf/">
+            
+                <a href="../dtostrf/">
+            
+                    
+                    Convert floating point a character string(dtostrf)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../schedule/">
+            
+                <a href="../schedule/">
+            
+                    
+                    Run every n seconds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../moving-average/">
+            
+                <a href="../moving-average/">
+            
+                    
+                    Moving Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-ieee1888/">
+            
+                <a href="../../4-ieee1888/">
+            
+                    
+                    IEEE1888(FIAP)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-ieee1888/keywords/">
+            
+                <a href="../../4-ieee1888/keywords/">
+            
+                    
+                    Keywords
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-ieee1888/getting-started/">
+            
+                <a href="../../4-ieee1888/getting-started/">
+            
+                    
+                    Upload from M2M gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4-ieee1888/code-reading/">
+            
+                <a href="../../4-ieee1888/code-reading/">
+            
+                    
+                    Description temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../4-ieee1888/extending-temp-upload/">
+            
+                <a href="../../4-ieee1888/extending-temp-upload/">
+            
+                    
+                    Extend temp_upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >SerialCLI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="serial-cli-serial-console">Serial CLI (serial console)</h2>
+<p>SerialCLI is a library that provides a command line interface with serial console. It is bothersome to change Arduino&apos;s setting by recompiling and rewriting the program. SerialCLI connects to Arduino at the serial terminal and ends with <code>conf</code> -&gt;<code>&lt;entry&gt; = &lt;value&gt;</code>-&gt;<code>save</code>! You can save arbitrary parameters. Other than that, you can also define and extend the original command.</p>
+<p>The corresponding data types are as follows.</p>
+<ul>
+<li>String</li>
+<li>Boolean</li>
+<li>Integer</li>
+<li>IP Address</li>
+<li>MAC Address</li>
+</ul>
+<h3 id="1-instantiation-and-entry-settings">1. Instantiation and entry settings</h3>
+<p>First, let&apos;s instantiate the SerialCLI class. Pass the class of the serial interface you want to use as an argument. Usually Arduino such as Uno has only one serial interface, but Arduino with multiple serial interfaces such as Mega can also pass like Serial 2.</p>
+<pre><code class="lang-C++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;SerialCLI.h&gt;</span></span>
+
+<span class="hljs-function">SerialCLI <span class="hljs-title">commandline</span><span class="hljs-params">(Serial)</span></span>;
+</code></pre>
+<p>Let&apos;s set up an entry next. <code>Entry (&lt;entry name&gt;, &lt;initial value&gt;, &lt;description of entry&gt;)</code> respectively.</p>
+<pre><code class="lang-C++"><span class="hljs-function">MacEntry <span class="hljs-title">mac</span><span class="hljs-params">(<span class="hljs-string">&quot;MAC&quot;</span>, <span class="hljs-string">&quot;AA:BB:CC:DD:EE:FF&quot;</span>, <span class="hljs-string">&quot;mac address&quot;</span>)</span></span>;
+<span class="hljs-function">BoolEntry <span class="hljs-title">dhcp</span><span class="hljs-params">(<span class="hljs-string">&quot;DHCP&quot;</span>, <span class="hljs-string">&quot;true&quot;</span>, <span class="hljs-string">&quot;DHCP enable/disable&quot;</span>)</span></span>;
+<span class="hljs-function">IPAddressEntry <span class="hljs-title">ip</span><span class="hljs-params">(<span class="hljs-string">&quot;IP&quot;</span>, <span class="hljs-string">&quot;192.168.13.127&quot;</span>, <span class="hljs-string">&quot;IP address&quot;</span>)</span></span>;
+<span class="hljs-function">StringEntry <span class="hljs-title">host</span><span class="hljs-params">(<span class="hljs-string">&quot;HOST&quot;</span>, <span class="hljs-string">&quot;www.kisarazu.ac.jp&quot;</span>, <span class="hljs-string">&quot;hostname&quot;</span>)</span></span>;
+</code></pre>
+<p>Lastly is the declaration of the extension command handler. You can call the specified function with any command string. Please define global function without argument and return value.</p>
+<pre><code class="lang-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">enable_debug</span><span class="hljs-params">()</span>
+</span>{
+  Serial.println(<span class="hljs-string">&quot;Debug enabled.&quot;</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">disable_debug</span><span class="hljs-params">()</span>
+</span>{
+  Serial.println(<span class="hljs-string">&quot;Debug disabled.&quot;</span>);
+}
+</code></pre>
+<h3 id="2-entry-and-command-registration">2. Entry and command registration</h3>
+<p>Next we will register entries and commands in the command line interface. To register an entry, pass the instance of the entry as a pointer to the <code>add_entry</code> method. To add a command, pass the command string and the handler to call to the <code>add_command</code> method.</p>
+<pre><code class="lang-C++">commandline.add_entry(&amp;mac);
+commandline.add_entry(&amp;dhcp);
+commandline.add_entry(&amp;ip);
+commandline.add_entry(&amp;host);
+
+commandline.add_command(<span class="hljs-string">&quot;debug&quot;</span>, enable_debug);
+commandline.add_command(<span class="hljs-string">&quot;nodebug&quot;</span>, disable_debug);
+</code></pre>
+<h3 id="3-start">3. Start</h3>
+<p>Advance preparation is completed. After that, specify the baud rate and the message at startup and start it.</p>
+<pre><code class="lang-C++">commandline.begin(<span class="hljs-number">9600</span>, <span class="hljs-string">&quot;SerialCLI Sample&quot;</span>);
+</code></pre>
+<h3 id="4-event-handling">4. Event handling</h3>
+<p>Finally call the <code>process</code> function for each loop with the <code>loop</code> function to perform processing.</p>
+<pre><code class="lang-C++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  commandline.process();
+}
+</code></pre>
+<h3 id="5-get-value">5. Get value</h3>
+<p>To retrieve the value from the entry, call the <code>get_val</code> method.</p>
+<pre><code class="lang-C++">Serial.println(host.get_val());
+</code></pre>
+<h3 id="how-to-use">How to use</h3>
+<p>Such a message is output when connecting with a serial terminal.</p>
+<pre><code>SerialCLI Sample
+SerialCLI Ver.0.01
+current setting
+    MAC=00:00:00:00:00:00
+    DHCP=false
+    IP=0.0.0.0
+    HOST=
+setting description (and default value)
+    MAC... mac address(default AA:BB:CC:DD:EE:FF)
+    DHCP... DHCP enable/disable(default true)
+    IP... IP address(default 192.168.13.127)
+    HOST... hostname(default www.kisarazu.ac.jp)
+commands
+    help, show, conf, exit, load [default], save,
+    debug, nodebug,
+&gt;
+</code></pre><p>All registered entries and commands are displayed. Let&apos;s type <code>show</code> as a test.</p>
+<pre><code>&gt;show
+    MAC=00:00:00:00:00:00
+    DHCP=false
+    IP=0.0.0.0
+    HOST=
+</code></pre><p>Nothing is set. The initial value is used in this state. Let&apos;s compete the values. Let&apos;s start by entering <code>conf</code> and setting mode.</p>
+<pre><code>&gt;conf
+enter conf mode
+#
+</code></pre><p>The prompt has changed. In this state all entries can be set. To set up an entry, enter <code>&lt;entry name&gt; = &lt;value&gt;</code>.</p>
+<pre><code class="lang-C++"><span class="hljs-meta">#HOST=ujyu.net</span>
+<span class="hljs-meta">#</span>
+</code></pre>
+<p>Let&apos;s confirm.</p>
+<pre><code>#show
+    MAC=00:00:00:00:00:00
+    DHCP=false
+    IP=0.0.0.0
+    HOST=ujyu.net
+#
+</code></pre><p>Since it is not saved as it is, enter <code>save</code> and save it.</p>
+<pre><code>#save
+saving...done.
+#
+</code></pre><p>The set value is now written to the EEPROM. Restart with <code>reboot</code> and finish.</p>
+<p>To load the initial value, type <code>load default</code> and it is <code>save</code>.</p>
+<p>Extended commands are invoked by entering the calling string.</p>
+<pre><code>&gt;debug
+debug
+Debug enabled.
+&gt;
+&gt;nodebug
+debug
+nodebug
+Debug disabled.
+&gt;
+</code></pre><h3 id="source-code">Source code</h3>
+<pre><code class="lang-C++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;SerialCLI.h&gt;</span></span>
+
+<span class="hljs-function">SerialCLI <span class="hljs-title">commandline</span><span class="hljs-params">(Serial)</span></span>;
+
+<span class="hljs-function">MacEntry <span class="hljs-title">mac</span><span class="hljs-params">(<span class="hljs-string">&quot;MAC&quot;</span>, <span class="hljs-string">&quot;AA:BB:CC:DD:EE:FF&quot;</span>, <span class="hljs-string">&quot;mac address&quot;</span>)</span></span>;
+<span class="hljs-function">BoolEntry <span class="hljs-title">dhcp</span><span class="hljs-params">(<span class="hljs-string">&quot;DHCP&quot;</span>, <span class="hljs-string">&quot;true&quot;</span>, <span class="hljs-string">&quot;DHCP enable/disable&quot;</span>)</span></span>;
+<span class="hljs-function">IPAddressEntry <span class="hljs-title">ip</span><span class="hljs-params">(<span class="hljs-string">&quot;IP&quot;</span>, <span class="hljs-string">&quot;192.168.13.127&quot;</span>, <span class="hljs-string">&quot;IP address&quot;</span>)</span></span>;
+<span class="hljs-function">StringEntry <span class="hljs-title">host</span><span class="hljs-params">(<span class="hljs-string">&quot;HOST&quot;</span>, <span class="hljs-string">&quot;www.kisarazu.ac.jp&quot;</span>, <span class="hljs-string">&quot;hostname&quot;</span>)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">enable_debug</span><span class="hljs-params">()</span>
+</span>{
+  Serial.println(<span class="hljs-string">&quot;Debug enabled.&quot;</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">disable_debug</span><span class="hljs-params">()</span>
+</span>{
+  Serial.println(<span class="hljs-string">&quot;Debug disabled.&quot;</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  commandline.add_entry(&amp;mac);
+  commandline.add_entry(&amp;dhcp);
+  commandline.add_entry(&amp;ip);
+  commandline.add_entry(&amp;host);
+
+  commandline.add_command(<span class="hljs-string">&quot;debug&quot;</span>, enable_debug);
+  commandline.add_command(<span class="hljs-string">&quot;nodebug&quot;</span>, disable_debug);
+
+  commandline.begin(<span class="hljs-number">9600</span>, <span class="hljs-string">&quot;SerialCLI Sample&quot;</span>);
+
+  Serial.println(host.get_val());
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  commandline.process();
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../ntp/" class="navigation navigation-prev " aria-label="Previous page: NTP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dtostrf/" class="navigation navigation-next " aria-label="Next page: Convert floating point a character string(dtostrf)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SerialCLI","level":"1.4.12","depth":2,"next":{"title":"Convert floating point a character string(dtostrf)","level":"1.4.13","depth":2,"path":"3-arduino-fundamentals/dtostrf/README.md","ref":"3-arduino-fundamentals/dtostrf/README.md","articles":[]},"previous":{"title":"NTP","level":"1.4.11","depth":2,"path":"3-arduino-fundamentals/ntp/README.md","ref":"3-arduino-fundamentals/ntp/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-48046698-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"3-arduino-fundamentals/serialcli/README.md","mtime":"2017-12-04T17:53:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-06T09:33:43.421Z"},"basePath":"../..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
